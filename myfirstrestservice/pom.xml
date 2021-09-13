@@ -5,7 +5,6 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<packaging>war</packaging>
 		<version>2.5.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
@@ -13,6 +12,7 @@
 	<artifactId>myfirstrestservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>myfirstrestservice</name>
+	<packaging>war</packaging>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<!--<junit-jupiter.version>5.4.0</junit-jupiter.version> -->
