@@ -13,6 +13,7 @@
 	<artifactId>myfirstrestservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>myfirstrestservice</name>
+	<packaging>war</packaging>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<!--<junit-jupiter.version>5.4.0</junit-jupiter.version> -->
