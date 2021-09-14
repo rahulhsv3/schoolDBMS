@@ -3,22 +3,19 @@ pipeline{
     stages{
         stage("CompilePhase"){
             steps{
-                bat "cd myfirstrestservice/jerkins"
-                bat "mvn compile"
+                bat "cd myfirstrestservice & mvn compile"
                 }
             }
 
         stage("testPhase"){
             steps{
-                bat "cd myfirstrestservice/jerkins"
-                bat "mvn test"
+                bat "cd myfirstrestservice & mvn test"
                 }
         }
 
         stage("packagePhase"){
         steps{
-            bat "cd myfirstrestservice/jerkins"
-            bat "mvn clean package"
+            bat "cd myfirstrestservice & mvn clean package"
                 }
             }
         }
