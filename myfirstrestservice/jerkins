@@ -3,21 +3,18 @@ pipeline{
     stages{
         stage("compilePhase"){
             steps{
-                bat "cd C:\WINDOWS\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\CompilePhase\myfirstrestservice"
                 bat "mvn compile"
                 }
             }
 
         stage("testPhase"){
             steps{
-                bat "cd C:\WINDOWS\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\CompilePhase\myfirstrestservice"
                 bat "mvn test"
                 }
         }
 
         stage("packagePhase"){
         steps{
-            bat "cd C:\WINDOWS\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\CompilePhase\myfirstrestservice"
             bat "mvn clean package"
                 }
             }
